@@ -1,0 +1,72 @@
+﻿@using Makalem.Models
+@model IEnumerable<Yorum>
+@{
+    ViewData["Title"] = "Comment";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+
+<link href="~/css/ListComment.css" rel="stylesheet" />
+
+<h2>Yorumlar</h2>
+<br />
+@foreach (var cmt in Model)
+{
+    <center>
+        <div class="commentsborder">
+            <div class="commentsimg">
+                <img src="~/images/icon.png" />
+            </div>
+
+            <div class="comments">
+
+                <div class="commentshead">
+                    <div class="cmt">
+                        @cmt.Adi @cmt.Soyadi
+                    </div>
+                </div>
+                <div class="commentsbody">
+                    <div class="cmt">
+                        @cmt.Yorum1
+                    </div>
+                </div>
+            </div>
+            <div class="updel">
+                @if (cmt.DurumTipi == false)
+                {
+                    <a class="btn btn-success" asp-controller="Admin" asp-action="Comment" asp-route-id="@cmt.Id" asp-route-cid="2"> Onayla </a>
+                }
+
+                <a class="btn btn-danger" asp-controller="Admin" asp-action="Comment" asp-route-id="@cmt.Id" asp-route-cid="1">Sil</a>
+               
+                <!---<a class="btn btn-danger" data-toggle="modal" data-target="#myModal"> Sil </a>
+
+               
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+
+                        
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Dikkat !!!</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>" @cmt.Yorum1 " yorumunu silmekten emin misiniz ? </p>
+                            </div>
+                            <div class="modal-footer">
+
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Kapat</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                -->
+
+            </div>
+        </div>
+    </center>
+ 
+    <br /><br />
+}
+

@@ -1,0 +1,76 @@
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\bin\Debug\netcoreapp2.1\Makalem.deps.json
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\bin\Debug\netcoreapp2.1\Makalem.runtimeconfig.json
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\bin\Debug\netcoreapp2.1\Makalem.runtimeconfig.dev.json
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\bin\Debug\netcoreapp2.1\Makalem.dll
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\bin\Debug\netcoreapp2.1\Makalem.pdb
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\bin\Debug\netcoreapp2.1\Makalem.Views.dll
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\bin\Debug\netcoreapp2.1\Makalem.Views.pdb
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.csproj.CoreCompileInputs.cache
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.RazorAssemblyInfo.cache
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.RazorAssemblyInfo.cs
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.AssemblyInfoInputs.cache
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.AssemblyInfo.cs
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.TagHelpers.input.cache
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.TagHelpers.output.cache
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.RazorCoreGenerate.cache
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.RazorTargetAssemblyInfo.cache
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.RazorTargetAssemblyInfo.cs
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.Views.pdb
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.dll
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.pdb
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.csproj.CopyComplete
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\Home\ViewArticle.g.cshtml.cs
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\Signin\Signin.g.cshtml.cs
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\SignUp\SignUp.g.cshtml.cs
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.csprojAssemblyReference.cache
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Index.g.cshtml.cs
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Admin_Layout.g.cshtml.cs
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\MakaleEkle\MakaleEkle.g.cshtml.cs
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Comment.g.cshtml.cs
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\Admin\usr.g.cshtml.cs
+C:\Users\Neslihan Ak\Documents\Visual Studio 2017\Projects\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Article.g.cshtml.cs
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\bin\Debug\netcoreapp2.1\Makalem.deps.json
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\bin\Debug\netcoreapp2.1\Makalem.runtimeconfig.json
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\bin\Debug\netcoreapp2.1\Makalem.runtimeconfig.dev.json
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\bin\Debug\netcoreapp2.1\Makalem.dll
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\bin\Debug\netcoreapp2.1\Makalem.pdb
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\bin\Debug\netcoreapp2.1\Makalem.Views.dll
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\bin\Debug\netcoreapp2.1\Makalem.Views.pdb
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.csprojAssemblyReference.cache
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.csproj.CoreCompileInputs.cache
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.RazorAssemblyInfo.cache
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.RazorAssemblyInfo.cs
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.AssemblyInfoInputs.cache
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.AssemblyInfo.cs
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.TagHelpers.input.cache
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.TagHelpers.output.cache
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.RazorCoreGenerate.cache
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Article.g.cshtml.cs
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Comment.g.cshtml.cs
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Index.g.cshtml.cs
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\Admin\usr.g.cshtml.cs
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\Home\ViewArticle.g.cshtml.cs
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\MakaleEkle\MakaleEkle.g.cshtml.cs
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Admin_Layout.g.cshtml.cs
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\Signin\Signin.g.cshtml.cs
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\SignUp\SignUp.g.cshtml.cs
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.RazorTargetAssemblyInfo.cache
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.RazorTargetAssemblyInfo.cs
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.Views.pdb
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.dll
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.pdb
+C:\Users\Neslihan Ak\Desktop\PROJECT\Makalem\Makalem\obj\Debug\netcoreapp2.1\Makalem.csproj.CopyComplete

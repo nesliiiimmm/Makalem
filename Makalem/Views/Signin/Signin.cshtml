@@ -1,0 +1,28 @@
+﻿@using Makalem.Models
+
+@model IEnumerable<Kullanici>
+@{
+    ViewData["Title"] = "Signin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="text-center" >
+    <br /><br />
+    <form class="form-signin" method="post">
+ 
+        <h1 class="h3 mb-3 font-weight-normal">Lütfen Giriş Yapın</h1>
+        <label for="inputEmail" class="sr-only">Email </label>                                                
+         <input name="email" type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>    
+        <label for="inputPassword" class="sr-only">Şifre</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Şifre" name="password"  required>
+        <div class="checkbox mb-3">
+            <label>
+                <input type="checkbox" value="remember-me"> Beni Hatırla
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Giriş</button><br/>
+    </form>
+    <h1 class="h3 mb-3 font-weight-normal" style="color:red;">@ViewData["info"]</h1>
+
+    
+</div>

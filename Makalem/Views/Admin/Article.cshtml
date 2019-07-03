@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Makale>
+@{
+    ViewData["Title"] = "Article";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+
+<h2>Article</h2>
+<div class="row">
+    <!-- Main_portfolio_content Start -->
+    <div class="main_portfolio_content">
+        @foreach (var makale in Model)
+        {
+            <div class="gallery_product col-md-3 col-sm-4 col-xs-6 filter @makale.MakaleKategori">
+                <div>
+                    <a asp-controller="Home" asp-action="ViewArticle" asp-route-id="@makale.Id">
+                        <img src="~/images/portfolio/image-1.jpg" class="img-responsive" alt="image-1" />
+                        <div class="portfolio_images_overlay text-center">
+                            <h6>
+                                <br>
+                                <span>
+                                    @makale.Baslik  <i class="fa fa-comment" aria-hidden="true" style="color: white;"></i>
+                                </span>
+                            </h6>
+                        </div>
+                    </a>
+                    @if (makale.DurumTipi == false)
+                    {
+                        <a class="btn btn-success" asp-action="Article" asp-route-id="@makale.Id" asp-route-cid="1">Onayla</a>
+
+                    }
+                    <a class="btn btn-danger" asp-action="Article" asp-route-id="@makale.Id" >Sil</a>
+
+                </div>
+            </div>
+            
+        }
+    </div>
+    <!-- Main_portfolio_content Ended -->
+</div>

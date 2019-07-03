@@ -1,0 +1,185 @@
+﻿@using Microsoft.AspNetCore.Http
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Freelance Photographer PSD Website Template">
+    <meta name="keywords" content="HTML,CSS,Bootstrap,JavaScript">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Title -->
+    <title>MakaleAraBul</title>
+
+    <!-- Bootstrap CSS and font-awesome -->
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Main CSS -->
+    <link href="~/css/main.css" rel="stylesheet">
+    <link href="~/css/animate.css" rel="stylesheet">
+    <link href="~/css/Signin.css" rel="stylesheet" />
+    <link href="~/css/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/css/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,500i,700" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Return to Top -->
+    <a href="javascript:" id="return-to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+    <!-- Header Section Start -->
+    <header>
+        <!-- Container Section Start -->
+        <div class="container">
+            <!-- Row Start -->
+            <div class="row">
+                <!-- First column Start -->
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <a href="https://www.makalearabul.com" target="_blank"><p>www.makalearabul.com</p></a>
+                </div>
+                <!-- Second column Start -->
+                <div class="col-xs-12 col-sm-4 col-md-4">
+
+                    <a class="logo" asp-controller="Home" asp-action="Index"><img src="~/images/logo/logo.png" alt="logo" width="72" height="66"></a>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+
+
+                </div>
+                <!-- Third column Start -->
+                <div class="col-xs-12 col-sm-4 col-md-4" >
+                    &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                    @if (Context.Session.GetString("Id") != null)
+                    {
+
+                        @if (Context.Session.GetString("KullaniciType") != "0")
+                        {
+                            <a  style="float:right;"class="btn btn-default" asp-controller="MakaleEkle" asp-action="MakaleEkle">Makale Yaz</a> 
+                        }
+                        else
+                        {
+                            <label style="color:white;"> @Context.Session.GetString("KullaniciAdi")</label>
+
+                        }
+
+                        <a   style="float:right; margin-right:5px;" class="btn btn-default" asp-controller="Signin" asp-action="SignOut">Çıkış Yap</a>
+
+                    }
+                    else
+                    {
+                        <a class="btn btn-default" asp-controller="Signin" asp-action="Signin">Giriş Yap </a>
+                        <a class="btn btn-default" asp-controller="SignUp" asp-action="SignUp">Kayıt Ol</a>
+                    }
+
+                </div>
+            </div>
+            <!-- Row Ended -->
+        </div>
+        <!-- Container Section Ended -->
+    </header>
+    <!-- Header Section Ended -->
+    <!-- Navbar Section Start -->
+    <nav id="navbar">
+        <!-- Container Section Start -->
+        <div class="container">
+            <!-- navbar-toggle -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <i class="fa fa-bars" aria-hidden="true" style="color:white;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-center">
+
+                    <!--<li><a class="active" href="#">Portraits</a></li>
+                     <li class="hidden-xs">-</li>  -->
+                    <!-- Eger eklenecek bi sayfa falan olursa burdan ekleyeceğiz -->
+
+                </ul>
+            </div>
+        </div>
+        <!-- Container Section Ended -->
+    </nav>
+    <!-- Navbar Section Ended -->
+    @RenderBody()
+    <!-- Footer Section Start -->
+    <footer>
+
+        <!-- Footer Links -->
+        <div class="container text-md-left">
+            <div class="row">
+
+                <!-- First column -->
+                <div class="col-sm-6 col-md-3">
+                    <a href="index.html"><img src="images/logo/logo.png" alt="logo" width="144" height="144"></a>
+                    <p> <span><a href="https://www.makalearabul.com" target="_blank">info@omakalearabul.com</a></span>. Designed by YCNB</p>
+                </div>
+                <!-- First column -->
+                <!--Second column-->
+                <div class="col-sm-6 col-md-3 mx-auto">
+                    <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">MakaleAraBul</h5>
+                    <address>
+                        Artık makale araştırmak ve okumak çok kolay. Bir tıkla bilgiye ulaşmanın tadını çıkartın. :) Bize Hızlı Soru bölümünden ulaşabilirsiniz. <br />
+                        <br /><a href="https://www.makalearabul.com" target="_blank">info@makalearabul.com</a><br />
+                    </address>
+                </div>
+                <!-- Second column -->
+                <!-- Third column -->
+                <div class="col-sm-6 col-md-2 mx-auto">
+                    <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Site Linkleri</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a asp-controller="Home" asp-action="Index">Ana Sayfa</a>
+                        </li>
+                        @*<li>
+                                <a asp-controller="Home" asp-action="About">About Us</a>
+                            </li>
+                            <li>
+                                <a href="Photography.html">Photography</a>
+                            </li>*@
+
+                    </ul>
+                </div>
+                <!-- Third column -->
+                <!-- Fourth column -->
+                <div class="col-sm-6 col-md-4">
+                    <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Hızlı Soru</h5>
+                    <form>
+                        <ul class="list-unstyled">
+                            <li class="row">
+                                <div class="col-md-6">
+                                    <input required type="text" class="form-control" placeholder="İsim">
+                                </div>
+                                <div class="col-md-6">
+                                    <input required type="text" class="form-control" placeholder="Email">
+                                </div>
+                            </li>
+                            <li class="row">
+                                <div class="col-md-12">
+                                    <textarea required class="form-control massage" placeholder="Sorunuz.." rows="5" id="comment"></textarea>
+                                </div>
+                            </li>
+                            <li class="row">
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-default">Gönder</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <!-- Fourth column -->
+            </div>
+        </div>
+        <!-- Footer Links -->
+
+    </footer>
+    <!-- Footer Section Ended -->
+    <!-- jQuery (plugins) -->
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/js/javascript.js"></script>
+    <script src="~/js/animate.js"></script>
+    <script src="~/js/global.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+﻿@using Microsoft.AspNetCore.Http
+@model IEnumerable<Kategori>
+
+@{
+    ViewData["Title"] = "MakaleEkle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<center>
+    <div class="wrapper wrapper--w680">
+        <div class="card card-4">
+            <div class="card-body" style="background-color:black">
+                <h2 class="title">Makale Ekleme</h2>
+                <form class="form" asp-controller="MakaleEkle" asp-action="MakaleEkle" method="post">
+
+                    <div class="col-2">
+                        <div class="input-group">
+                            <label class="label" style="font-size:18px;">Makale Başlığı:</label><br />
+                            <input class="input--style-4" style="line-height:30px;width:340px;color:black;" type="text" name="Baslik">
+                        </div>
+                    </div>
+                    <br />
+
+                    <div class="col-2">
+                        <div class="input-group" style="width:350px">
+                            <label class="label" style="font-size:18px;">Category:</label><br />
+                            <div class="p-t-10">
+                                @foreach (var cat in Model)
+                                {
+                                    <label style="color:white" ;> <input style="width:20px;" type="checkbox" value="@cat.Id" name="catid" />@cat.Adi &nbsp;</label>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+
+                    <div class="input-group" style="color:black">
+                        <label class="label" style="font-size:18px;">Makale Dili:</label><br />
+                        <div class="rs-select2 js-select-simple select--no-search">
+                            <select id="makaledil" name="MakaleDili" style="width:340px">
+                                <option selected="selected" value="0">Türkçe</option>
+                                <option value="1">İngilizce</option>
+                                <option value="2">Diğer</option>
+                            </select>
+                            <div class="select-dropdown"></div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="col-2">
+                        <div class="input-group" style="width:340px;color:black">
+                            <label class="label" style="font-size:18px;">İçerik:</label><br />
+                            <textarea class="form-control" style="width:340px; height:100px;color:black;" type="text" name="Icerik"></textarea>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <div class="col-2">
+                        <button type="submit" class="btn btn-default">Ekle</button>
+                        </div>
+                    </div>
+                </form>
+                <br />
+            </div>
+        </div>
+    </div>
+
+</center>

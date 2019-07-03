@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Kullanici>
+@{
+    ViewData["Title"] = "usr";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+<link href="~/css/ListComment.css" rel="stylesheet" />
+
+
+<h2>Kullanıcılar</h2>
+
+<br />
+@foreach (var klnc in Model)
+{
+    <center>
+        <div class="commentsborder">
+            <div class="commentsimg">
+                <img src="~/images/icon.png" />
+            </div>
+
+            <div class="comments">
+                <div class="commentshead">
+                    <div class="cmt">
+                        @klnc.Adi @klnc.Soyadi (@if (@klnc.KullaniciTipi != 2)
+                        {
+                            <label>Üye</label>
+                        }
+                        else
+                        {
+                            <label>Admin</label>
+                        })
+                    </div>
+                </div>
+                <div class="commentsbody">
+                    <div class="cmt">
+                        @klnc.Email  
+                    </div>
+                </div>
+            </div>
+            <div class="updel">
+                @if (klnc.KullaniciTipi != 2)
+                {
+                    <a class="btn btn-success" asp-controller="Admin" asp-action="usr" asp-route-id="@klnc.Id" asp-route-type="2">Admin Yap</a>
+                }
+                else
+                {
+                    <a class="btn btn-success" asp-controller="Admin" asp-action="usr" asp-route-id="@klnc.Id" asp-route-type="1">Üye Yap</a>
+
+                }
+                <a class="btn btn-danger" asp-controller="Admin" asp-action="usr" asp-route-id="@klnc.Id"> Sil </a>
+            </div>
+            </div>
+        
+    </center>
+    <br />
+    <hr />
+}

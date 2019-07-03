@@ -1,0 +1,140 @@
+﻿@using Makalem.Controllers
+@using Microsoft.AspNetCore.Http;
+
+@model Tuple<IEnumerable<Yorum>, Makale>
+
+@{
+    ViewData["Title"] = "ViewArticle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/css/comment.css" rel="stylesheet" />
+
+<!-- Blog Section Start -->
+<section id="blog-page" style="padding-top: 40px;">
+    <!-- Container Start -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <h3 class="heading1"> @Model.Item2.Baslik </h3>
+                <figure>
+                    <center>
+                        <img class="image" style="width:50%; height:25%;" src="~/images/portfolio/image-1.jpg" alt="The Pulpit Rock">
+                    </center>
+                </figure>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                <h4>Posted by  <span style="color: #c5b503">OSOM</span> In :<span style="color: #2d8c3a">s</span></h4>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <!-- Container Ended -->
+    <!-- Container Ended -->
+    <!-- Container Start -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="inner-contant" style="padding-top: 30px; padding-bottom: 20px; ">
+
+                    <p data-aos="fade-up" data-aos-duration="1000">
+                        @Model.Item2.Icerik
+                    </p>
+
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <!-- Container Ended -->
+    <h3 style="text-align:center;">YORUMLAR</h3><br />
+
+    @if (Context.Session.GetString("Id") != null)
+    {
+        @using (Html.BeginForm())
+        {
+            <div class="row">
+                <div class="col-md-12">
+                    <center>
+                        <form action="" method="POST" id="commentform">
+
+                            <div id="comment-name" class="form-row">
+                                <input type="hidden" value="@Context.Session.GetString("Adi")" name="dname" id="name" required>
+                            </div>
+                            <div id="comment-surname" class="form-row">
+                                <input type="hidden" value="@Context.Session.GetString("Soyadi")" name="dsurname" id="surname" required>
+                            </div>
+                            <div id="comment-email" class="form-row">
+                                <input type="hidden" value="@Context.Session.GetString("Email")" name="demail" id="email" required>
+                            </div>
+                            <div id="comment-message" class="form-row">
+                                <textarea name="comment" placeholder="Yorum" id="comment" required></textarea>
+                            </div><br />
+
+                            <input type="submit" name="@Model.Item2.Id" id="commentSubmit" value="Yorum Yap"><br />
+                        </form>
+                    </center>
+                </div>
+            </div>
+        }
+    }
+
+    @foreach (var yrm in Model.Item1)
+    {
+        if (yrm.DurumTipi == true)
+        {
+            <center>
+                <article class="row">
+                    <div class="col-md-10 col-sm-10">
+                        <div class="panel panel-default arrow center">
+                            <div class="panel-body">
+                                <header class="text-center">
+                                    <figcaption class="text-center">@yrm.Adi @yrm.Soyadi</figcaption>
+                                </header>
+                                <div class="comment-post">
+                                    <p style="color:black;">@yrm.Yorum1 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </center>
+        }
+    }
+
+
+    <!-- Container Start
+
+    <div class="container">
+        <h3 class="heading2">Your May Also Like These</h3>-->
+    <!-- Row Start
+    <div class="row" style="padding-bottom: 85px;">
+        <div class="col-xs-12 col-sm-4 col-md-4" style="margin-bottom: 15px;" data-aos="fade-right" data-aos-duration="1500">
+            <img src="~/images/blog/post-1.jpg" alt="blog" class="img-responsive">
+            <div class="carousel-caption">
+                <a href="blog-page.html" class="btn btn-info" role="button">California</a>
+                <a href="blog-page.html"><h5>Beautiful road like waterfall in the california of south most beautiful view.</h5></a>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4" style="margin-bottom: 15px;" data-aos="zoom-in" data-aos-duration="1500">
+            <img src="~/images/blog/post-2.jpg" alt="blog" class="img-responsive">
+            <div class="carousel-caption">
+                <a href="blog-page.html" class="btn btn-info" role="button">Everest</a>
+                <a href="blog-page.html"><h5>Wonderful Mount everest of india, beautiful scene.</h5></a>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4" style="margin-bottom: 15px;" data-aos="fade-left" data-aos-duration="1500">
+            <img src="~/images/blog/post-3.jpg" alt="blog" class="img-responsive">
+            <div class="carousel-caption">
+                <a href="blog-page.html" class="btn btn-info" role="button">south whales</a>
+                <a href="blog-page.html"><h5>Beautiful road like waterfall in the california of south most beautiful view.</h5></a>
+            </div>
+        </div>
+    </div>
+    </div>-->
+    <!-- Container Ended -->
+</section>
+
+

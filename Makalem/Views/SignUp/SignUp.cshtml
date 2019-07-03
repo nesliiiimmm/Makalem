@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewData["Title"] = "SignUp";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/css/SignUpmain.css" rel="stylesheet" />
+
+<div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+    <div class="wrapper wrapper--w780">
+        <div class="card card-3">
+            <div class="card-heading"></div>
+            <div class="card-body">
+                <h2 class="title">Kayıt Formu</h2>
+                <form method="POST">
+                    <div class="input-group">
+                        <input class="input--style-3" type="text" placeholder="Adınız" name="name" required autofocus>
+                    </div>
+                    <div class="input-group">
+                        <input class="input--style-3" type="text" placeholder="Soyadınız" name="surname" required autofocus>
+                    </div>
+                    <div class="input-group">
+                        <input class="input--style-3" type="email" placeholder="Email" name="email" required autofocus>
+                    </div>
+                    <div class="input-group">
+                        <input class="input--style-3" type="text" placeholder="Kullanıcı Adınız" name="username" required autofocus>
+                    </div>
+                    <div class="input-group">
+                        <input class="input--style-3" type="password" placeholder="Şifre" name="password" required autofocus>
+                    </div>
+                    <div class="input-group">
+                        <input class="input--style-3" type="password" placeholder="Şifre Tekrar" name="confirmpassword" required autofocus>
+                    </div>
+                    <div class="input-group">
+                        <label><input style="width:20px;" type="checkbox" value="0" name="usertype"/>Okuyucu</label><br />
+                        <label><input style="width:20px;"  type="checkbox" value="1" name="usertype"/>Yazıcı</label>
+
+                    </div>
+                    <div class="p-t-10">
+                        <button class="btn btn-success" style="border-radius:10px;" type="submit">Kayıt</button>
+                    </div>
+                    <br /><br />
+                    <div>
+                        <label required autofocus style="color:red; font-size:15px;">@ViewData["pass"]</label>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

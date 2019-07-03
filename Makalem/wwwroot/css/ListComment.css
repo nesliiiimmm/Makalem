@@ -1,0 +1,53 @@
+﻿.commentsborder {
+    width: 630px;
+    height: 80px;
+}
+
+.commentsimg {
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: white
+}
+
+    .commentsimg img {
+        width: 80px;
+        height: 80px;
+    }
+
+.comments {
+    float: right;
+    width: 500px;
+    height: 80px;
+}
+
+.cmt {
+        padding: 10px;
+    }
+
+.commentshead {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 40px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 16px;
+ 
+}
+
+.commentsbody {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 40px;
+    color: black;
+    background-color:azure;
+    text-align: center;
+    font-size: 16px;
+}
+.updel{
+    float:right;
+    width:150px;
+    height:40px;
+}
